@@ -1,0 +1,11 @@
+Vendored source: Purchase World
+  Author  : Junichiro Niimi
+  Paper   : Three-in-One World Model: Energy-Based Consistency, Prediction, and Counterfactual
+            Inference for Marketing Intervention, ICONIP 2026 (arXiv:2605.07199)
+  License : MIT (see LICENSE in this directory)
+
+The files in this directory (RBM / DBM classes, greedy pretraining and joint PCD fine-tuning,
+adapters and CATE baselines, the Purchase-World simulation generator, device helper) are adapted
+from the author's Purchase World code. Modifications: import paths only (package-relative imports;
+`wandb`, `matplotlib` and `requests` made optional / lazy). No numerical code was changed;
+`tests/test_masked_dbm.py` checks that the masked classes reproduce these classes exactly.
